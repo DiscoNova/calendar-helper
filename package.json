@@ -1,0 +1,34 @@
+{
+  "name": "calendar-helper",
+  "version": "0.0.1",
+  "description": "Selection of utility-/helper-functions I always seem to be reimplementing in various projects",
+  "keywords": [
+    "date",
+    "calendar"
+  ],
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint src/*.js",
+    "test": "./node_modules/.bin/jest",
+    "coverage": "./node_modules/.bin/jest --coverage",
+    "lint+test": "npm run lint && npm run test",
+    "lint+coverage": "npm run lint && npm run coverage",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "lint+coverage+coveralls": "npm run lint+coverage && npm run coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiscoNova/calendar-helper.git"
+  },
+  "author": "Markku Post (Uttula)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DiscoNova/calendar-helper/issues"
+  },
+  "homepage": "https://github.com/DiscoNova/calendar-helper#readme",
+  "devDependencies": {
+    "coveralls": "^3.1.1",
+    "eslint": "^8.0.1",
+    "jest": "^27.3.0"
+  }
+}
